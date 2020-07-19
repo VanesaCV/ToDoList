@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(251, 251, 251);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #7a5353;
+    border: 0px #af9e9e;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-weight: 100;
+    color: rgba(255, 0, 0, 0.15);
+    font-size: 100px;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#toDo-Wrapper {
+    background-color: rgb(252, 252, 252);
+    width: 50%;
+    max-width: 540px;
+    min-width: 387px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(247, 247, 247, 1);
+    -moz-box-shadow: 10px 10px 14px 0px rgba(247, 247, 247, 1);
+    box-shadow: 10px 10px 14px 0px rgba(247, 247, 247, 1);
+    radius: 10px;
+}
+
+#input {
+    display: flex;
+    justify-content: flex-start;
+    background-color: inherit;
+    font-size: 24px;
+    border: 1px #ececec solid;
+    border-bottom: 0;
+    padding: 10px 0 10px 0;
+}
+
+#input input {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    font-weight: 100;
+    font-size: inherit;
+    color: #7a5353;
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input:focus {
+    outline: none;
+}
+
+#dropDownArrow {
+    color: lightgrey;
+    margin: 5px 9px 0px 10px;
+    font-size: 16px;
+}
+
+#toDo-Wrapper label {
+    width: 80%;
+}
+
+.toDos {
+    -webkit-box-shadow: inset 0px 0px 9px 4px rgba(247, 247, 247, 0.78);
+    -moz-box-shadow: inset 0px 0px 9px 4px rgba(247, 247, 247, 0.78);
+    box-shadow: inset 0px 0px 9px 4px rgba(247, 247, 247, 0.78);
+    display: flex;
+    justify-content: space-between;
+    font-size: inherit;
+    border: 1px #ececec solid;
+    border-bottom: 0;
+    padding: 15px 10px;
+}
+
+.delete {
+    margin: 0 10px;
+    font-weight: 100;
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.delete:hover {
+    opacity: 1;
+}
+
+.edit {
+    margin: 0 10px;
+    font-weight: 100;
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.edit:hover {
+    opacity: 1;
+}
+
+#toDo-Footer {
+    font-size: 10px;
+    border: 1px #ececec solid;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: inset 0px 0px 9px 4px rgba(247, 247, 247, 0.78);
+    -moz-box-shadow: inset 0px 0px 9px 4px rgba(247, 247, 247, 0.78);
+    box-shadow: inset 0px 0px 9px 4px rgba(247, 247, 247, 0.78);
+}
+
+#completed {
+    display: visible !important;
+}
+
+#toDo-Footer span {
+    padding: 0 4px;
+    border-radius: 5px;
+}
+
+#toDo-Footer span:hover {
+    border: 1px #ececec solid;
+}
+
+#toDo-Footer .active {
+    border: 1px #ececec solid;
+}
+
+#itemsSelect span {
+    margin: 0 5px;
+    cursor: pointer;
+}
